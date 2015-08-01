@@ -20,7 +20,9 @@ public class Explorer
 	{
 		Scanner playerInput = new Scanner(System.in);
 		Scanner scanner = new Scanner(System.in);
-		JOptionPane.showMessageDialog(null, "Welcome to My Dungeon Explorer Ethan v2.4.\nEnter your name and dungeon name.");
+		JOptionPane.showMessageDialog(null, "Welcome to My Dungeon Explorer Ethan v2.5.\nEnter your name and dungeon name.");
+		
+		int myCounter = 0;
 		
 		//Choosing your name.
 		System.out.println("What is your name?");
