@@ -16,7 +16,18 @@ import javax.swing.JOptionPane;
 
 public class Explorer
 {
-	static double gameVersion = 1.1;
+	
+	
+	
+	
+	//Version
+	static double gameVersion = 1.2;
+	
+	
+	
+	
+	
+	
 	static String caveName = "Name";
 	static String selectedWeapon = "";
 	static int weaponsUnlocked = 1;
@@ -39,24 +50,19 @@ public class Explorer
 		
 		
 		//Menu
-		System.out.println("-----Menu-----");
-		System.out.println("---Choices:---");
-		System.out.println("--------------");
-		System.out.println("-----Play-----");
-		System.out.println("-----Info-----");
-		System.out.println("-----Quit-----");
+		selectedWeapon = JOptionPane.showInputDialog("Menu\nChoices:\nPlay   Info   Quit");
 		
-		
-		selectedWeapon = playerInput.nextLine();
 		if(selectedWeapon.equalsIgnoreCase("play"))
 		{
 			
 		}
+		
 		else if(selectedWeapon.equalsIgnoreCase("info"))
 		{
 			JOptionPane.showMessageDialog(null, "Game made by Ethan\nusing Eclipse Java.");
 			JOptionPane.showMessageDialog(null, "Game version = " + gameVersion);
 		}
+		
 		else if(selectedWeapon.equalsIgnoreCase("quit"))
 		{
 			JOptionPane.showMessageDialog(null, "Goodbye");
@@ -64,9 +70,8 @@ public class Explorer
 		}
 		
 		
-		System.out.println("You are going into the " + caveName + ".");
-		System.out.println("Good luck!");
 		
+		JOptionPane.showMessageDialog(null, "You are going into the " + caveName + ".\nGood luck!");
 		
 		
 		//Starting the adventure.
