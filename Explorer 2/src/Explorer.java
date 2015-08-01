@@ -28,15 +28,13 @@ public class Explorer
 		JOptionPane.showMessageDialog(null, "Welcome to Dungeon Explorer.\nEnter your name and dungeon name.");
 		
 		//Choosing your name.
-		System.out.println("What is your name?");
-		player1.playerName = playerInput.nextLine();
+		player1.playerName = JOptionPane.showInputDialog("What is your name?");
 		System.out.println("Hello " + player1.playerName + "!");
 		
 		
 		
 		//Choosing the dungeon name.
-		System.out.println("What is the dungeon's name?");
-		caveName = playerInput.nextLine();
+		caveName = JOptionPane.showInputDialog("Enter your Dungeon name.");
 		
 		
 		
