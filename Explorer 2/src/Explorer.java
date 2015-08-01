@@ -21,7 +21,8 @@ public class Explorer
 	
 	
 	//Version
-	static double gameVersion = 1.2;
+	static double gameVersion = 1.3;
+	static String gameDevelopment = "Alfa Development";
 	
 	
 	
@@ -40,8 +41,7 @@ public class Explorer
 		
 		//Choosing your name.
 		player1.playerName = JOptionPane.showInputDialog("What is your name?");
-		System.out.println("Hello " + player1.playerName + "!");
-		
+		JOptionPane.showMessageDialog(null, "Hello " + player1.playerName + "!");
 		
 		
 		//Choosing the dungeon name.
@@ -50,17 +50,19 @@ public class Explorer
 		
 		
 		//Menu
+		while(gameVersion > 1)
+	{
 		selectedWeapon = JOptionPane.showInputDialog("Menu\nChoices:\nPlay   Info   Quit");
 		
 		if(selectedWeapon.equalsIgnoreCase("play"))
 		{
-			
+			break;
 		}
 		
 		else if(selectedWeapon.equalsIgnoreCase("info"))
 		{
 			JOptionPane.showMessageDialog(null, "Game made by Ethan\nusing Eclipse Java.");
-			JOptionPane.showMessageDialog(null, "Game version = " + gameVersion);
+			JOptionPane.showMessageDialog(null, "Game version = " + gameVersion + " " + gameDevelopment);
 		}
 		
 		else if(selectedWeapon.equalsIgnoreCase("quit"))
@@ -68,7 +70,7 @@ public class Explorer
 			JOptionPane.showMessageDialog(null, "Goodbye");
 			System.exit(0);
 		}
-		
+	}
 		
 		
 		JOptionPane.showMessageDialog(null, "You are going into the " + caveName + ".\nGood luck!");
